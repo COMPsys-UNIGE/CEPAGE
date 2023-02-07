@@ -1,0 +1,80 @@
+<!--#include virtual="/menu/software_header.html" -->
+<!--#include file="position.html" -->
+<!--#include file="sidemenu.html" -->
+<div class="documentByLine">last modified 
+<!--#config timefmt="%B %e, %Y - %H:%M %Z" --><!--#echo var="LAST_MODIFIED" -->
+</div>
+<h1 class="documentFirstHeading">CEPAGE Toolbox</h1>
+
+<img width="500" height="200" src="/software/CEPAGE/pics/logo.png" alt="CEPAGE_logo" />
+
+<br />
+
+<h2> Download </h2>
+
+<br />
+
+<h5> Toolbox </h5>
+<p> <a href="software/CEPAGE_Toolbox/CEPAGE_v1_2.zip"> Download CEPAGE Toolbox [version v1.2]</a><p/>
+
+<h2> Description </h2>
+</br>
+
+<h3> Overview </h3>
+CEPAGE is an Object-Oriented-Programming-based MATLAB toolbox which allows to:    
+<ul>
+    <li> Fit hysteresis and creep models (Prandtl-Ishlinskii, power-law, Kuhnen and Preisach) based on experimental data;
+    <li> Simulate hysteresis and creep models in MATLAB or Simulink;  
+    <li> Generate inverse models, i.e., compensators;
+    <li> Simulate hysteresis and creep compensators in MATLAB or Simulink; 
+    <li> Generate C files for the microcontroller implementation of the compensators, useful for a real-time compensation of hysteretic systems;
+</ul>
+
+<br/>
+
+<h3> Requirements </h3>
+The toolbox has been tested on MATLAB R2015b with Windows 10 and Ubuntu 16.04 operating systems. 
+</br>
+No compatibility issues are expected with different MATLAB versions (not older than MATLAB R2009) and different operating systems.
+</br>
+The toolbox employes MEX files, i.e., functions written in C which are called by MATLAB. 
+</br>
+This allows to really increase the computation speed. 
+Nevertheless, a C compiler is required to compile mex files. Type    
+</br>
+</br>
+   >> mex -setup   
+</br>
+</br>
+to configure your compiler.
+
+</br>
+</br>
+
+<h3> Installation instructions</h3>
+In order to install CEPAGE toolbox follow these steps:
+<ol>
+    <li> Open MATLAB;
+    <li> Move to the CEPAGE folder;
+    <li> Type </br>
+       >> setup </br>
+    <li> When asked, type y to insall boost c++ library </br>
+       >> y  </br>
+    If the MATLAB path cannot be saved, you will need to perform the installation every time you run MATLAB.
+</ol>
+Further installation instruction are aviable in the toolbox manual.
+
+<h2> Acknowledgements </h2>
+<br />
+<h3> Developers </h3> 
+<ul>
+<li><a href="people/lodi"> Matteo Lodi</a> - University of Genoa, Italy</li>
+</ul>
+<br />
+<h3> Reference </h3> 
+<p>If you use the toolbox for research, please cite the following paper:</p>
+<ol>
+<li>Oliveri A., Lodi M., Stellino F., Storace M., "Modeling and compensation of hysteresis and creep: the HysTool toolbox",</br> 2018 International Symposium on Circuits and Systems (ISCAS), Florence (Italy), May 27-30, 2018. In the press. </br>
+<a href="software/CEPAGE/biblio.bib"> [bibtex]</a>
+</ol>
+<!--#include virtual="/menu/footer.html" -->
